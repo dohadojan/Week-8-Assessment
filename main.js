@@ -8,6 +8,7 @@ function sum(x,y){
   return x+y
 }
 
+
 2) 
 function consoleReturn(x,y){
   console.log(x)
@@ -35,18 +36,21 @@ var object2={
 }
 */
 
-//1) WRITE YOUR CODE UNDER THIS LINE         
+//1) WRITE YOUR CODE UNDER THIS LINE   
+
+// we havea diffrent way to write the  function  in ES6 
 
 //2) WRITE YOUR CODE UNDER THIS LINE         
 
+// we have a diffrent way to write the  function  in ES6
+
 //3) WRITE YOUR CODE UNDER THIS LINE         
+
+// we have a diffrent way to write the  function  in ES6
 
 //4) WRITE YOUR CODE UNDER THIS LINE         
 
 //5) WRITE YOUR CODE UNDER THIS LINE         
-
-
-
 
 
 
@@ -74,7 +78,21 @@ Output =>
 
 // WRITE YOUR CODE UNDER THIS LINE
 
+ 
 
+Computer ={ Os:'Windows'
+  
+  , RAM:16,
+  
+CPU='I7'
+}//class
+doubleRAM()={
+
+
+}
+  return Computer;
+  
+  //methode
 
 
 
@@ -99,11 +117,12 @@ export default class App extends Component {
   render() {
     return (
       <h1>App Component => state.title</h1>
-      <button onClick={this.changeTitle}>Change Title</button>
-      <Tasks tasks={this.todos} changeTitleFromChild={this.changeTitle} />
+      <button onClick={this.state}>Change Title</button>
+      <Tasks tasks={this.changeTitle} changeTitleFromChild={this.changeTitle} />
     );
   }
 }
+// 
 
 // Tasks Component
 import React, { Component } from 'react';
@@ -122,7 +141,9 @@ class Tasks extends Component {
         <h1>Tasks Component => state.day</h1>
         <button onClick={this.changeDay}>Change Tasks State</button>
         <button onClick={changeTitle}>Change App State</button>
+        <Tasks tasks={this.changeDa} changeTitleFromChild={this.changeTitle} />
       </div>
     );
   }
 }
+
